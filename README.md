@@ -60,4 +60,5 @@ Disable play/pause bindings in gnome-settings
 Create new binding with following:
  - Command: `dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause`
  - Shortcut: anything
-`dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'AudioPlay'"`
+
+run `dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'AudioPlay'"`
