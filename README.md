@@ -48,5 +48,5 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
 ## Spotify
 (Scale the client, requires spotify-gnome-integration)
 
-    wget https://raw.githubusercontent.com/kronos3/Macbook-Pro-11-3/master/spotify-dbus.patch
-    patch -d /usr/bin -p0 < spotify-dbus.patch
+    wget https://raw.githubusercontent.com/kronos3/Macbook-Pro-11-3/master/spotify.desktop
+    sudo cp spotify.desktop /usr/share/applications/spotify.desktop
