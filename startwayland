@@ -1,0 +1,1 @@
+EXDG_SESSION_TYPE=wayland dbus-run-session gnome-session
