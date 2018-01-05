@@ -13,7 +13,7 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
     makepkg -so # don't install yet we haven't applied the patch
     cd src/grub/
     # download the patch here
-    wget https://raw.githubusercontent.com/Kronos3/applesetos/master/applesetos.patch
+    wget https://raw.githubusercontent.com/Kronos3/Macbook-Pro-11-3/master/applesetos.patch
     # apply the patch
     patch -p1 < applesetos.patch
     # compile git
@@ -41,6 +41,7 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
 
     git clone https://github.com/NVIDIA/egl-wayland.git
     cd egl-wayland
-    
+    wget https://raw.githubusercontent.com/kronos3/Macbook-Pro-11-3/master/wayland-egl.patch
+    patch -p1 < wayland-egl.patch
     ./autogen.sh
     
