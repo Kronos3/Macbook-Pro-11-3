@@ -3,7 +3,7 @@ Name=Spotify
 GenericName=Music Player
 Comment=Spotify streaming music client
 Icon=spotify-client
-Exec=spotify --force-device-scale-factor=2 %U
+Exec=spotify-dbus.py %U
 TryExec=spotify
 Terminal=false
 Type=Application
