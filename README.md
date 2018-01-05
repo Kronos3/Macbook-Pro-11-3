@@ -1,4 +1,4 @@
-# applesetos
+## applesetos
 Patch to grub for the apple_to_os
 
 
@@ -19,7 +19,7 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
     # compile git
     cd ../../ && makepkg -sri
 
-# NVIDIA Backlight
+## NVIDIA Backlight
 
 `systemctl enable nvidia-bl`
 
