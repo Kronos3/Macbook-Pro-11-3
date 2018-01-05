@@ -1,0 +1,10 @@
+[Unit]
+Description=Enable the NVIDIA backlight
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0"
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
