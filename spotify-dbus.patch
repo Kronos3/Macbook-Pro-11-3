@@ -1,0 +1,11 @@
+--- spotify-dbus.py	2014-09-08 01:09:12.000000000 -0400
++++ spotify-dbus.py	2018-01-05 14:28:49.000000000 -0500
+@@ -492,7 +492,7 @@
+ 		spotify = self.which('spotify')
+ 			
+ 		if spotify != False:
+-			os.system(spotify + ' > /dev/null 2>&1 &')
++			os.system(spotify + ' --force-device-scale-factor=2 > /dev/null 2>&1 &')
+ 			time.sleep(1);
+ 			
+ 			return cmd_output.getoutput('pidof spotify').strip()
