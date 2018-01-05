@@ -35,3 +35,12 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
 
     [Install]
     WantedBy=multi-user.target
+    
+## Wayland-EGL
+(Run wayland with NVIDIA)
+
+    git clone https://github.com/NVIDIA/egl-wayland.git
+    cd egl-wayland
+    
+    ./autogen.sh
+    
