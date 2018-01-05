@@ -36,7 +36,7 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
     [Install]
     WantedBy=multi-user.target
     
-## Wayland-EGL
+## Wayland-EGL (Not working)
 (Run wayland with NVIDIA)
 
     git clone https://github.com/NVIDIA/egl-wayland.git
@@ -44,4 +44,9 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
     wget https://raw.githubusercontent.com/kronos3/Macbook-Pro-11-3/master/wayland-egl.patch
     patch -p1 < wayland-egl.patch
     ./autogen.sh
-    
+
+## Spotify
+(Scale the client, requires spotify-gnome-integration)
+
+    wget https://raw.githubusercontent.com/kronos3/Macbook-Pro-11-3/master/spotify-dbus.patch
+    patch -d /usr/bin -p0 < spotify-dbus.patch
