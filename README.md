@@ -4,6 +4,8 @@ Patch to grub for the apple_to_os
 
 This patch can be applied to https://git.savannah.gnu.org/git/grub.git
 
+I had use `--skipinteg` with makepkg because as of today (Jan 5 2018) the grub-git repo has invalid checksums 
+
 This patch also works with the grub-git aur repo for arch linux. To install for arch linux do the following
 
     git clone https://aur.archlinux.org/grub-git.git
