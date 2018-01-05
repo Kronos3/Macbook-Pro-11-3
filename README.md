@@ -55,3 +55,9 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
     patch -p0 < spotify-dbus.patch
     sudo cp spotify.desktop /usr/share/applications/spotify.desktop
     sudo cp spotify-dbus.py /usr/bin
+
+Disable play/pause bindings in gnome-settings
+Create new binding with following:
+ - Command: `dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause`
+ - Shortcut: anything
+`dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'AudioPlay'"`
