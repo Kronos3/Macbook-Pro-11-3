@@ -18,3 +18,20 @@ This patch also works with the grub-git aur repo for arch linux. To install for 
     patch -p1 < applesetos.patch
     # compile git
     cd ../../ && makepkg -sri
+
+# NVIDIA Backlight
+
+`systemctl enable nvidia-bl`
+
+`/etc/systemd/system/nvidia-bl.service`
+
+    [Unit]
+    Description=Enable the NVIDIA backlight
+
+    [Service]
+    Type=oneshot
+    ExecStart=/bin/sh -c "setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0"
+    RemainAfterExit=yes
+
+    [Install]
+    WantedBy=multi-user.target
