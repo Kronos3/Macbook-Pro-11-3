@@ -62,3 +62,11 @@ Create new binding with following:
  - Shortcut: anything
 
 run `dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'AudioPlay'"`
+
+## Console font
+Install the terminus-font package
+
+`/etc/vconsole.conf`
+
+    FONT=ter-132n
+    FONT_MAP=8859-2
