@@ -70,3 +70,7 @@ Install the terminus-font package
 
     FONT=ter-132n
     FONT_MAP=8859-2
+
+## NVIDIA Blackscreen
+If you are blackscreening after `startx` try adding yourself to the `video` group.
+If all else fails go into gnome using `gdm`.
